@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Archiving source code...
+hg archive --type tgz --prefix Sunflower ~/Desktop/Sunflower.tgz
