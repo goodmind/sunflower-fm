@@ -1,0 +1,69 @@
+- Improve file search and multi-rename windows. Filters on the left.
+
+- Make get_monitor method in provider
+
+- Make our own signals for monitor events
+
+- Loading directory items from separate thread doesn't update directory stats.
+
+- Fix Shift+Tab combination
+
+- Create option to duplicate selected file with new name. In cases where both left and right path
+are same and only one file is selected offer this option by default.
+
+- On copy/move operation when checking whether the remote directory or file exists we should
+check how many parts of path exist and cache that and skip the rest of the files.
+
+- Lazy accelerator switch (should fix some of the crash problems)
+
+- Ability to extend popup menu
+
+- Ability to extend file list columns
+
+- Directory monitoring doesn't catch on mount event
+
+- Tab menu: Lock, close, close others
+
+- Monitor history file and reload when needed
+
+- Remove duplicates from history file when loading
+
+- Show rename when moving a single file in same directory
+
+- Mark symbolic links somehow
+
+- Space counts directory size in separate thread
+
+- Breadcrumb trail for tab title bar
+
+- Upon receiving focus file list should check validity of its current path
+
+- Terminal tab without scrollbars forces window size
+
+- Set tooltip text for long filenames in file list
+
+- Configurable toolbar look
+
+- Letter accelerators on labels
+
+- On select/deselect return number of affected items
+
+- When comparing directories using option from Mark menu notify user when directories are identical
+
+- Create GObject signals for main windows
+
+- Migrate from inheriting gtk.Window to creating self.window
+
+- Directory synchronization
+
+- Duplicate files finder
+
+- View text files
+
+- Internal editor
+
+- Make file_list module provider agnostic
+
+- Create mount manager
+
+- Terminal options (read font, size, background, cursor type)
