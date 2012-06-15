@@ -1,0 +1,49 @@
+- On create directory/file when adding item manually we don't test for show hidden
+
+- Handle cases in which PyGTK can't load SVG image in set_window_icon method.
+
+- Change the way editor is selected. Offer user with dropdown list of editors or manual entry.
+
+- On copy/move operation when checking whether the remote directory or file exists we should
+check how many parts of path exist and cache that and skip the rest of the files.
+
+- Improve file search and multi-rename windows. Filters on the left.
+
+- Create option to duplicate selected file with new name. In cases where both left and right path
+are same and only one file is selected offer this option by default.
+
+- Ability to extend popup menu
+
+- Ability to extend file list columns
+
+- Directory monitoring doesn't catch on mount event
+
+- Tab menu: Lock, close, close others
+
+- Monitor history file and reload when needed
+
+- Remove duplicates from history file when loading
+
+- Show rename when moving a single file in same directory
+
+- Mark symbolic links somehow
+
+- Space counts directory size in separate thread
+
+- Breadcrumb trail for tab title bar
+
+- Upon receiving focus file list should check validity of its current path
+
+- Set tooltip text for long filenames in file list
+
+- Configurable toolbar look
+
+- Letter accelerators on labels
+
+- Create GObject signals for main windows
+
+- Migrate from inheriting gtk.Window to creating self.window
+
+- Directory synchronization
+
+- Duplicate files finder
