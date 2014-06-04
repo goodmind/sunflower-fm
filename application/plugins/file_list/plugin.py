@@ -1980,9 +1980,13 @@ class FileList(ItemList):
 
 		try:
 			# populate list
+			if not provider.exists(self.path):
+				raise OSError(_('No such file or directory'))
+			if not provider.is_dir(self.path):
+				selected = os.path.basename(self.path)
+				self.path = os.path.dirname(self.path)
 			self._item_to_focus = selected
 			self._load_directory(self.path, clear_store=True)
-
 			# if no errors occurred during path change,
 			# call parent method which handles history
 			ItemList.change_path(self, self.path)
